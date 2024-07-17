@@ -4,19 +4,108 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-
-  <title>Sparta Coding Club | Bootstrap Practice</title>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  
+  <style>
+    body {
+      font-family: 'Yusei Magic', sans-serif;
+    }
+    .hero {
+      background-image: url('https://example.com/hero-image.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3em;
+    }
+  </style>
+  
+  <title>Fan Book | Favorite Artist</title>
 </head>
 
 <body>
-  <h1>Start with this template!</h1>
+  <!-- Hero Section -->
+  <div class="hero">
+    <h1>Welcome to the Fan Book</h1>
+  </div>
+
+  <!-- About Section -->
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>About the Artist</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vulputate commodo justo, vitae pretium massa bibendum vel.</p>
+      </div>
+      <div class="col-md-6">
+        <img src="https://example.com/artist-photo.jpg" class="img-fluid" alt="Artist Photo">
+      </div>
+    </div>
+  </div>
+
+  <!-- Quote Section -->
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-12">
+        <figure class="text-center">
+          <blockquote class="blockquote">
+            <p class="mb-0">"Music is the divine way to tell beautiful, poetic things to the heart."</p>
+          </blockquote>
+          <figcaption class="blockquote-footer">
+            Pablo Casals
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+
+  <!-- Albums Section -->
+  <div class="container mt-5">
+    <h2 class="text-center">Albums</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://example.com/album1.jpg" class="card-img-top" alt="Album 1">
+          <div class="card-body">
+            <h5 class="card-title">Album 1</h5>
+            <p class="card-text">Released: 2020</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://example.com/album2.jpg" class="card-img-top" alt="Album 2">
+          <div class="card-body">
+            <h5 class="card-title">Album 2</h5>
+            <p class="card-text">Released: 2018</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://example.com/album3.jpg" class="card-img-top" alt="Album 3">
+          <div class="card-body">
+            <h5 class="card-title">Album 3</h5>
+            <p class="card-text">Released: 2015</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="mt-5 p-3 text-center">
+    <p>&copy; 2024 Fan Book. All Rights Reserved.</p>
+  </footer>
 </body>
 
 </html>
